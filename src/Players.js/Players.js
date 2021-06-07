@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import playerData from '../fakeData.json'
-import PlayerInfo from '../PlayerInfo/PlayerInfo';
-import Team from '../Team/Team';
+import PlayerInfo from '../components/PlayerInfo/PlayerInfo';
+import Team from '../components/Team/Team';
 
 const Players = () => {
     const [players, setPlayers] = useState(playerData);         // using useState 

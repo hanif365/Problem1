@@ -9,7 +9,7 @@ const Team = (props) => {
                 <div className="card-body">
                     <ul>
                         {
-                            props.selectedPlayer.map(addPlayer => <li>{addPlayer.name}<ul><li>Salary : {addPlayer.salary} (BDT)</li></ul></li>)    // here we show player name and player bid.(auction money)
+                            props.selectedPlayer.map(addPlayer => <li>{addPlayer.name}<ul><li>Salary : {addPlayer.salary} (BDT)</li></ul></li>)    // here we show player name and player salary.(auction money)
                         }
                     </ul>
                     <h5>Total Budget : {totalBudget} (BDT)</h5>

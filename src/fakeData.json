@@ -1,0 +1,20 @@
+[{
+    "id": 1,
+    "name": "Shakib Al Hasan",
+    "email": "sakibalhasan@gmail.com",
+    "gender": "Male",
+    "salary": 30000000
+  }, {
+    "id": 2,
+    "name": "Mashrafe Mortaza",
+    "email": "mashrafemortaza@gmail.com",
+    "gender": "Male",
+    "salary": 15000000
+  }, {
+    "id": 3,
+    "name": "Mushfiqur Rahim",
+    "email": "mushfiqurrahim@gmail.com",
+    "gender": "Male",
+    "salary": 17500000
+  }
+]

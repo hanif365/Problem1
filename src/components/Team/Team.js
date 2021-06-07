@@ -1,4 +1,5 @@
 import React from 'react';
+import './Team.css'
 
 const Team = (props) => {
     const totalBudget = props.selectedPlayer.reduce((total, player) => total + player.salary, 0); // find totalBudget using reduce()

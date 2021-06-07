@@ -1,0 +1,23 @@
+.card {
+    width: 21rem;
+    margin: 0 25px 25px 0;
+    cursor: pointer;
+}
+
+/* To make the opacity 0.6 in the player card */
+
+.card-container {
+    opacity: 0.6;
+    transition: all 500ms;
+}
+
+/* When over on player card it;s opacity become 1 */
+
+.card-container:hover {
+    opacity: 1;
+}
+
+.card img {
+    height: 200px;
+    width: 100%;
+}

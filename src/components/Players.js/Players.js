@@ -27,21 +27,9 @@ const Players = () => {
     const handleDeletePlayer = (player) => {
         console.log(player);
 
-        var newPlayer = selectedPlayer.filter((item) => item != player)
-        // const updatePlayer = [...selectedPlayer];
-        // const newPlayer = updatePlayer.pop();
-        // setSelectedPlayer(updatePlayer);
-
+        var newPlayer = selectedPlayer.filter((playerList) => playerList != player)
+        
         setSelectedPlayer(newPlayer);
-
-
-       
-        // const newPlayer = updatePlayer.filter((item) => item.player !== "Shakib Al Hasan");
-        // setSelectedPlayer(newPlayer);
-
-        // const newList = list.filter((item) => item.id !== id);
- 
-        // setList(newList);
 
     }
 

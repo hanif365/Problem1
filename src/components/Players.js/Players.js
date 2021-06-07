@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import playerData from '../fakeData.json'
-import PlayerInfo from '../components/PlayerInfo/PlayerInfo';
-import Team from '../components/Team/Team';
+import playerData from '../../fakeData.json'
+import PlayerInfo from '../PlayerInfo/PlayerInfo';
+import Team from '../Team/Team';
 
 const Players = () => {
     const [players, setPlayers] = useState(playerData);         // using useState 
@@ -24,7 +24,28 @@ const Players = () => {
         }
     }
 
-    // using bootStrap class to display flex.
+    const handleDeletePlayer = (player) => {
+        console.log(player);
+
+        var newPlayer = selectedPlayer.filter((item) => item != player)
+        // const updatePlayer = [...selectedPlayer];
+        // const newPlayer = updatePlayer.pop();
+        // setSelectedPlayer(updatePlayer);
+
+        setSelectedPlayer(newPlayer);
+
+
+       
+        // const newPlayer = updatePlayer.filter((item) => item.player !== "Shakib Al Hasan");
+        // setSelectedPlayer(newPlayer);
+
+        // const newList = list.filter((item) => item.id !== id);
+ 
+        // setList(newList);
+
+    }
+
+
     return (
         <div className="container py-5">
             <div className="d-flex justify-content-between">
@@ -33,7 +54,8 @@ const Players = () => {
                         players.map(player => <PlayerInfo
                             player={player}                     // pass value to PlayerInfo using attribute 
                             handleAddPlayer={handleAddPlayer}
-                            key={player.id}                     // passing id to manipulate data efficiently.
+                            key={player.id} 
+                            handleDeletePlayer={handleDeletePlayer}                    // passing id to manipulate data efficiently.
                         ></PlayerInfo>)
                     }
                 </div>

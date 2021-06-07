@@ -1,7 +1,6 @@
-import logo from './logo.svg';
 import React from 'react'
 import './App.css';
-import Players from './Players.js/Players';
+import Players from './components/Players.js/Players';
 
 function App() {
   return (
